@@ -14,10 +14,10 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 ## Operators
 
 - `A` **add**(*a* b): Outputs sum of inputs.
-- `B` **borders**(*rate* min max): counts linearly between 2 inputs.
-- `C` **clock**(*rate* mod): basic counter, by default resets every 8.
-- `D` **delay**(*rate* mod): Bangs on modulo of frame, by default resets every 8. Rate=0 deactivate bang.
-- `E` **every64**(*rate* mod): Slow counter, by default conut slowly until 64.
+- `B` **borders**(*rate* *min* *max*): Counts linearly between 2 inputs.
+- `C` **clock**(*rate* mod): Basic counter, by default resets every 8.
+- `D` **delay**(*rate* mod): Bangs on modulo of frame, by default resets every 8. Setting *rate=0* deactivates bang.
+- `E` **every64**(*rate* mod): Slow counter, by default counts slowly until 64.
 - `F` **if**(*a* b): Bangs if inputs are equal.
 - `G` **generator**(*x* *y* *len*): Writes operands with offset.
 - `H` **halt**: Halts southward operand.
@@ -58,4 +58,4 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 - `=` **OSC** (*path*;x;y..): Locks each consecutive eastwardly ports. `;` is delimeter for values
 - `$` **r.note**(mode scale): Outputs random note within scale. 
 - `?` **levels**(*param* value): Sets selected volume level on bang
-- `(` **arc.read**(enc): reads ARC encoder value 
+- `(` **arc.read**(*enc*): Reads ARC encoder value 
