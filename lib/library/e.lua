@@ -2,7 +2,7 @@ local E = function( self, x, y )
  
   self.y = y
   self.x = x
-  self.name = 'clock64'
+  self.name = 'every64'
   self.ports = { {-1, 0 , 'in-rate' },  {1, 0, 'in-mod' }, {0, 1, 'c-output' } }
   self:spawn(self.ports)
 
