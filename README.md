@@ -58,4 +58,4 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 - `=` **OSC** (*path*;x;y..): Locks each consecutive eastwardly ports. `;` is delimeter for values
 - `$` **r.note**(mode scale): Outputs random note within scale. 
 - `?` **levels**(*param* value): Sets selected volume level on bang
-- '(' **arc.read**(enc): reads ARC encoder value 
+- `(` **arc.read**(enc): reads ARC encoder value 
