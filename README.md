@@ -14,14 +14,14 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 ## Operators
 
 - `A` **add**(*a* b): Outputs sum of inputs.
-- `B` **bounce**(*rate* mod): Outputs values between inputs.
-- `C` **clock**(*rate* mod): Outputs modulo of frame.
-- `D` **delay**(*rate* mod): Bangs on modulo of frame.
-- `E` **east**: Moves eastward, or bangs.
+- `B` **borders**(*rate* min, max): counts linearly between 2 inputs.
+- `C` **clock**(*rate* mod): basic counter, by default resets every 8.
+- `D` **delay**(*rate* mod): Bangs on modulo of frame, by default resets every 8. Rate=0 deactivate bang.
+- `E` **every64**(*rate* mod): Slow counter, by default conut slowly until 64.
 - `F` **if**(*a* b): Bangs if inputs are equal.
 - `G` **generator**(*x* *y* *len*): Writes operands with offset.
 - `H` **halt**: Halts southward operand.
-- `I` **increment**(*step* mod): Increments southward operand.
+- `I` **increment**(*step* max): Increments by step until a max value.
 - `J` **jumper**(*val*): Outputs northward operand.
 - `K` **konkat**(*len*): Reads multiple variables.
 - `L` **loop**(*step* *len* val): Moves eastward operands.
@@ -35,10 +35,10 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 - `T` **track**(*key* *len* val): Reads eastward operand.
 - `U` **uclid**(*step* max): Bangs on Euclidean rhythm.
 - `V` **variable**(*write* read): Reads and writes variable.
-- `W` **west**: Moves westward, or bangs.
-- `X` **write**(*x* *y* val): Writes operand with offset.
+- `W` **write upleft**(*x* *y* val): Writes operand with offset in upper left directions.
+- `X` **write downright**(*x* *y* val): Writes operand with offset in down right directions.
 - `Y` **jymper**(*val*): Outputs westward operand.
-- `Z` **lerp**(*rate* target): Transitions operand to input.
+- `Z` **zoom**(*rate* target): Transitions operand to input.
 - `*` **bang**: Bangs neighboring operands.
 - `#` **comment**: Halts a line.
 
@@ -58,3 +58,4 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 - `=` **OSC** (*path*;x;y..): Locks each consecutive eastwardly ports. `;` is delimeter for values
 - `$` **r.note**(mode scale): Outputs random note within scale. 
 - `?` **levels**(*param* value): Sets selected volume level on bang
+- '(' **arc.read**(enc): reads ARC encoder value 
