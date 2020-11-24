@@ -14,7 +14,7 @@ Please refer to original [docs](https://github.com/hundredrabbits/Orca#operators
 ## Operators
 
 - `A` **add**(*a* b): Outputs sum of inputs.
-- `B` **borders**(*rate* min, max): counts linearly between 2 inputs.
+- `B` **borders**(*rate* min max): counts linearly between 2 inputs.
 - `C` **clock**(*rate* mod): basic counter, by default resets every 8.
 - `D` **delay**(*rate* mod): Bangs on modulo of frame, by default resets every 8. Rate=0 deactivate bang.
 - `E` **every64**(*rate* mod): Slow counter, by default conut slowly until 64.
